@@ -1,0 +1,30 @@
+CREATE TABLE program(
+    id UUID UNIQUE,
+    userid uuid not null,
+    moduleid uuid not null
+ );
+
+ CREATE TABLE tasksInProgram( \\ перезаписати
+    programId uuid not null references program(id),
+    taskId uuid not null, 
+    taskType varchar(255) not null, 
+    number integer UNIQUE not null, 
+    done boolean
+ );
+
+CREATE TABLE statisticsTasks(
+    id UUID UNIQUE,
+    userid uuid not null,
+    taskid uuid not null,
+    statistic decimal,
+    time timestamp
+ );
+ 
+ CREATE TABLE statisticsWords(
+    id UUID UNIQUE,
+    userid uuid not null,
+    wordid uuid not null,
+    statistic decimal,
+    time timestamp
+ );
+

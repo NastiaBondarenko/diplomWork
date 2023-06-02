@@ -1,0 +1,111 @@
+{
+    "root": true,
+    "env": {
+      "es6": true,
+      "browser": true,
+      "commonjs": true
+    },
+    "globals": {
+    },
+    "parserOptions": {
+      "sourceType": "module", 
+      "ecmaVersion": 8
+  },
+    "extends": "eslint:recommended",
+    "rules": {
+      "strict": [
+        "warn",
+        "global"
+      ],
+      "no-multi-spaces": "warn",
+      "curly": [
+        "warn",
+        "all"
+      ],
+      "operator-linebreak": [
+        "warn",
+        "after"
+      ],
+      "camelcase": [
+        "warn",
+        {
+          "properties": "always"
+        }
+      ],
+      "max-len": [
+        "warn",
+        120
+      ],
+      "indent": [
+        "warn",
+        "tab",
+        {
+          "SwitchCase": 1
+        }
+      ],
+      "no-multi-str": "warn",
+      "no-mixed-spaces-and-tabs": "warn",
+      "no-trailing-spaces": "warn",
+      "space-unary-ops": [
+        "warn",
+        {
+          "nonwords": false,
+          "overrides": {}
+        }
+      ],
+      "brace-style": [
+        "warn",
+        "1tbs",
+        {
+          "allowSingleLine": true
+        }
+      ],
+      "keyword-spacing": [
+        "warn",
+        {}
+      ],
+      "space-infix-ops": "warn",
+      "space-before-blocks": [
+        "warn",
+        "always"
+      ],
+      "eol-last": "warn",
+      "space-before-function-paren": [
+        "warn",
+        "always"
+      ],
+      "array-bracket-spacing": [
+        "warn",
+        "never",
+        {
+          "singleValue": true
+        }
+      ],
+      "space-in-parens": [
+        "warn",
+        "never"
+      ],
+      "no-multiple-empty-lines": "warn",
+      "no-with": "warn",
+      "no-spaced-func": "warn",
+      "key-spacing": [
+        "warn",
+        {
+          "beforeColon": false,
+          "afterColon": true
+        }
+      ],
+      "no-unused-vars": [
+        "warn",
+        {
+          "vars": "all",
+          "args": "all"
+        }
+      ],
+      "dot-notation": "warn",
+      "semi": [
+        "warn",
+        "always"
+      ]
+    }
+  }

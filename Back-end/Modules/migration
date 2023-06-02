@@ -1,0 +1,7 @@
+CREATE TABLE modules(
+    id UUID UNIQUE,
+    name VARCHAR (255) NOT NULL
+ );
+ 
+
+ d3bca9e6-e356-4392-ba77-46e3e5efd822

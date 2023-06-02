@@ -1,0 +1,13 @@
+CREATE TABLE words(
+   id UUID UNIQUE,
+   word VARCHAR (255) NOT NULL,
+   translation VARCHAR (255) NOT NULL
+);
+
+
+CREATE TABLE dictionary(
+   id UUID UNIQUE,
+   userid UUID  NOT NULL,
+   wordid uuid not null references words(id),
+   statistic decimal
+);

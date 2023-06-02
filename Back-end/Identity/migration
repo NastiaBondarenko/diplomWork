@@ -1,0 +1,16 @@
+CREATE TABLE user(
+   user_id serial PRIMARY KEY,
+   name VARCHAR (255),
+   login VARCHAR (255) UNIQUE NOT NULL,
+   password VARCHAR (255)
+);
+
+
+INSERT INTO user VALUES
+    (default, 'Anastasiia', 'aasinka', 'qwerty123');
+
+CREATE SEQUENCE table_id_seq;
+
+ALTER TABLE user2 
+    ALTER COLUMN user_id 
+        SET DEFAULT NEXTVAL('table_id_seq');
